@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="horizontal" >
+
+    <include
+        layout="@layout/title_1" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/edit_text"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_beijing"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/citybj" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/ui_homepage_content_city"
+                android:text="@string/city_name_beijing" />
+
+            <Button
+                android:id="@+id/button_beijing_conf_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button1"
+                android:layout_alignTop="@+id/button1"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/ui_homepage_content_num"
+                android:text="00" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_shanghai"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/citysh" >
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/ui_homepage_content_city"
+                android:text="@string/city_name_shanghai" />
+
+            <Button
+                android:id="@+id/button_shanghai_conf_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignTop="@+id/button2"
+                android:layout_marginLeft="78dp"
+                android:background="@drawable/ui_homepage_content_num"
+                android:text="00" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_chengdu"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/citycd" >
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/ui_homepage_content_city"
+                android:text="@string/city_name_chengdu" />
+
+            <Button
+                android:id="@+id/button_chengdu_conf_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button3"
+                android:layout_alignTop="@+id/button3"
+                android:layout_marginLeft="82dp"
+                android:background="@drawable/ui_homepage_content_num"
+                android:text="00" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/RelativeLayout_shenzhen"
+            android:background="@drawable/citysz" >
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/ui_homepage_content_city"
+                android:text="@string/city_name_shenzhen" />
+
+            <Button
+                android:id="@+id/button_shenzhen_conf_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button4"
+                android:layout_alignTop="@+id/button4"
+                android:layout_marginLeft="78dp"
+                android:background="@drawable/ui_homepage_content_num"
+                android:text="00" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/RelativeLayout_guangzhou"
+            android:background="@drawable/citygz" >
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/ui_homepage_content_city"
+                android:text="@string/city_name_guangzhou" />
+
+            <Button
+                android:id="@+id/button_guangzhou_conf_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button5"
+                android:layout_alignTop="@+id/button5"
+                android:layout_marginLeft="78dp"
+                android:background="@drawable/ui_homepage_content_num"
+                android:text="00" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

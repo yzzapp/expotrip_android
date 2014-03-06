@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:id="@+id/MyListItem" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="90dp" -->
+<!--     android:orientation="horizontal" -->
+<!--     android:paddingBottom="3dip" -->
+<!--     android:paddingLeft="10dip" > -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:paddingBottom="3dip"
+        android:paddingLeft="10dip" 
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:id="@+id/textView_recent_show"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#00ff00"
+            android:gravity="center"
+            android:text="近期" />
+
+        <TextView
+            android:id="@+id/ItemText"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/ItemTitle"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView_conferenceinfo_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#000000"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/ItemTitle"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:textSize="30dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:text="名称"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="53dp"
+            android:text="展馆"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/textView_conferenceinfo_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="53dp"
+            android:textColor="#000000"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView_conferenceinfo_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="18dp"
+            android:text="TextView"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+       
+<!-- </LinearLayout> -->
+    
+    

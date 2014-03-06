@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">kuaizhan</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="city_name_beijing">北京</string>
+    <string name="city_name_shenzhen">深圳</string>
+    <string name="city_name_guangzhou">广州</string>
+    <string name="city_name_shanghai">上海</string>
+    <string name="city_name_chengdu">成都</string>
+
+</resources>

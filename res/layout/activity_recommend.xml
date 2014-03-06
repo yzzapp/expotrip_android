@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarStyle="outsideOverlay"
+    android:background="@drawable/ui_homepage_background"
+    android:scrollbars="horizontal" >
+
+    <include
+        layout="@layout/title_1" />
+    
+     <TextView
+            android:id="@+id/textViewrecommendtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="经济型"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ui_exotrip_city" >
+
+                <TextView
+                    android:id="@+id/textView_recommend_start_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="出发地"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView_recommend_destination_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView_recommend_start_city"
+                    android:layout_alignBottom="@+id/textView_recommend_start_city"
+                    android:layout_marginLeft="34dp"
+                    android:layout_toRightOf="@+id/textView_recommend_start_city"
+                    android:text="目的地"
+                    android:textColor="#000000" />
+
+                
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView_recommend_confrence_name"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"
+                android:text="会议名称"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewtextView_recommend_total_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="false"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/relativeLayout1"
+                android:text="￥2000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="150dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:layout_marginTop="5dp"
+             android:background="@drawable/ui_exotrip_plan_content" >
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginTop="10dp"
+                 android:text="去程机票"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:textColor="#000000"
+                 android:textSize="15sp" />
+
+             <LinearLayout
+                 android:id="@+id/linearLayout2_asdfsafsf"
+                 android:layout_width="wrap_content"
+                 android:layout_height="90dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginRight="30dp"
+                 android:layout_marginTop="20dp"
+                 android:orientation="vertical" >
+
+                 <TextView
+                     android:id="@+id/textView_recommend_go_price_1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="原价:"
+                     android:textColor="#000000" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_go_price_2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="税价:"
+                     android:textColor="#000000" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_go_price_3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="油价:0"
+                     android:textColor="#000000" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_go_price_4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="折扣:0"
+                     android:textColor="#000000" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/linearLayout1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginBottom="50dp"
+                 android:layout_marginLeft="5dp"
+                 android:orientation="vertical" >
+
+                 <TextView
+                     android:id="@+id/textView_recommend_planeinfo_1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=""
+                     android:textColor="#000000"
+                     android:textSize="12sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_planeinfo_2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="航站："
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_planeinfo_3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="起飞:"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginBottom="50dp"
+                 android:layout_marginLeft="100dp"
+                 android:orientation="vertical" >
+
+                 <TextView
+                     android:id="@+id/textView_recommend_planeinfo_4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=""
+                     android:textColor="#000000"
+                     android:textSize="12sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_planeinfo_5"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="航站："
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_planeinfo_6"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="降落:"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/linearLayout3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/linearLayout1"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginBottom="10dp"
+                 android:layout_marginLeft="5dp" >
+
+                 <TextView
+                     android:id="@+id/textView_recommend_planeinfo_7"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="航班:"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_planeinfo_8"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="5dp"
+                     android:text="坐席:"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_planeinfo_9"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="5dp"
+                     android:text="准点率:"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+             </LinearLayout>
+
+             <TextView
+                 android:id="@+id/textView_recommend_go_price_total"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_below="@+id/linearLayout2_asdfsafsf"
+                 android:layout_marginRight="10dp"
+                 android:text="总计:0"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:textColor="#000000"
+                 android:textSize="15dp" />
+
+         </RelativeLayout>
+         
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:layout_marginTop="5dp"
+             android:background="@drawable/ui_exotrip_plan_content" >
+
+             <TextView
+                 android:id="@+id/textView3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginTop="10dp"
+                 android:text="入住酒店"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:textColor="#000000"
+                 android:textSize="15sp" />
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentRight="false"
+                 android:layout_alignParentTop="true"
+                 android:layout_centerHorizontal="false"
+                 android:layout_marginLeft="80dp"
+                 android:layout_marginTop="15dp" >
+
+                 <TextView
+                     android:id="@+id/textView_recommend_hotelinfo_1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="入住:"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_hotelinfo_2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:text="离店:"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+             </LinearLayout>
+
+             <TextView
+                 android:id="@+id/textView_recommend_hotelinfo_3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/textView3"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentTop="false"
+                 android:layout_centerVertical="true"
+                 android:layout_marginBottom="10dp"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginRight="15dp"
+                 android:gravity="center_vertical|center_horizontal|center"
+                 android:text="酒店"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:textColor="#000000"
+                 android:textSize="18dp" />
+             
+              <TextView
+                  android:id="@+id/textView_recommend_hotelinfo_5"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginTop="40dp"
+                  android:layout_below="@+id/textView_recommend_hotelinfo_3"
+                  android:text="￥"
+                  android:textColor="#000000"
+                  android:textSize="15dp" />
+
+              <TextView
+                  android:id="@+id/textView_recommend_hotelinfo_4"
+                  android:layout_width="150dp"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_below="@+id/textView_recommend_hotelinfo_3"
+                  android:layout_marginBottom="20dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="40dp"
+                  android:text="房型  "
+                  android:textColor="#000000"
+                  android:textSize="10sp" />
+             
+         </RelativeLayout>
+         
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="150dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:layout_marginTop="5dp"
+              android:id="@+id/linearLayout2_asdfs45"
+             android:background="@drawable/ui_exotrip_plan_content" >
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginTop="10dp"
+                 android:text="回程机票"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:textColor="#000000"
+                 android:textSize="15sp" />
+
+             <TextView
+                 android:id="@+id/textView_recommend_back_price_total"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_below="@+id/linearLayout2_asdfsafddfsf"
+                 android:layout_marginRight="10dp"
+                 android:text="总计:"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:textColor="#000000"
+                 android:textSize="15dp" />
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginRight="30dp"
+                 android:layout_marginTop="20dp"
+                 android:id="@+id/linearLayout2_asdfsafddfsf"
+                 android:orientation="vertical" >
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_price_1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="原价:"
+                     android:textColor="#000000" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_price_2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="税价:"
+                     android:textColor="#000000" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_price_3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="油价:"
+                     android:textColor="#000000" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_price_4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="折扣:"
+                     android:textColor="#000000" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/linearLayout1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginBottom="50dp"
+                 android:layout_marginLeft="5dp"
+                 android:orientation="vertical" >
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_planeinfo_1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=""
+                     android:textColor="#000000"
+                     android:textSize="12sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_planeinfo_2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="航站："
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_planeinfo_3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="起飞:"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginBottom="50dp"
+                 android:layout_marginLeft="100dp"
+                 android:orientation="vertical" >
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_planeinfo_4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="首都国际机场"
+                     android:textColor="#000000"
+                     android:textSize="12sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_planeinfo_5"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="航站："
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_planeinfo_6"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="降落:"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/linearLayout1"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginBottom="10dp"
+                 android:layout_marginLeft="5dp" >
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_planeinfo_7"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="航班:CZ900"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_planeinfo_8"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="5dp"
+                     android:text="坐席:X"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+                 <TextView
+                     android:id="@+id/textView_recommend_back_planeinfo_9"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="5dp"
+                     android:text="准点率:"
+                     android:textColor="#000000"
+                     android:textSize="10sp" />
+
+             </LinearLayout>
+         </RelativeLayout>
+
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>
